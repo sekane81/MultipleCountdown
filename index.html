@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery downCount</title>
+<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="jquery.downCount.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() { 
+	$('#count1').downCount({date: '07/09/2016 12:00:00',offset: +1});
+	$('#count2').downCount({date: '08/04/2015 10:45:30',offset: +1});
+	$('#count3').downCount({date: '09/10/2015 12:35:00',offset: +1});
+});
+	
+</script> 
+</head>
+<body>
+	<div style="float:left; width:165px;">
+	<div style="float:left; width:165px;margin-bottom:6px; background-color:#f6f6f6;padding:1px 0">
+	<a class="clock icon borderorange" title="Clock" href="#"></a><span style="font-family:'Open Sans', sans-serif;font-weight:bold;">Time remaining</span>
+	</div>
+	<div style="float:left; width:165px;">
+		<ul id="count1" class="countdown">
+			<li>
+				<span class="days borderorange backorange">00</span>
+				<p class="days_ref">days</p>
+			</li>
+			<li>
+				<span class="hours borderorange">00</span>
+				<p class="hours_ref">hours</p>
+			</li>
+			<li>
+				<span class="minutes borderorange">00</span>
+				<p class="min_ref">min</p>
+			</li>
+			<li>
+				<span class="seconds borderorange last">00</span>
+				<p class="seg_ref">seg</p>
+			</li>
+		</ul>
+	</div>
+	</div>
+	
+	<div style="float:left; height:40px;width:40px;"> </div>
+	
+	<div style="float:left; width:165px;">
+		<div style="float:left; width:165px;margin-bottom:6px; background-color:#f6f6f6;padding:1px 0">
+			<a class="clock icon borderblue" title="Clock" href="#"></a><span style="font-weight:bold;">Time remaining</span>
+		</div>
+		<div style="float:left; width:165px;">
+			<ul id="count2" class="countdown">
+				<li>
+					<span class="days borderblue backblue">00</span>
+					<p class="days_ref">days</p>
+				</li>
+				<li>
+					<span class="hours borderblue">00</span>
+					<p class="hours_ref">hours</p>
+				</li>
+				<li>
+					<span class="minutes borderblue">00</span>
+					<p class="min_ref">min</p>
+				</li>
+				<li>
+					<span class="seconds borderblue last">00</span>
+					<p class="seg_ref">seg</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+		<div style="float:left; height:40px;width:40px;"> </div>
+	
+	<div style="float:left; width:165px;">
+		<div style="float:left; width:165px;margin-bottom:6px; background-color:#f6f6f6;padding:1px 0">
+			<a class="clock icon bordergreen" title="Clock" href="#"></a><span style="font-weight:bold;">Time remaining</span>
+		</div>
+		<div style="float:left; width:165px;">
+			<ul id="count3" class="countdown">
+				<li>
+					<span class="days bordergreen backgreen">00</span>
+					<p class="days_ref">days</p>
+				</li>
+				<li>
+					<span class="hours bordergreen">00</span>
+					<p class="hours_ref">hours</p>
+				</li>
+				<li>
+					<span class="minutes bordergreen">00</span>
+					<p class="min_ref">min</p>
+				</li>
+				<li>
+					<span class="seconds bordergreen last">00</span>
+					<p class="seg_ref">seg</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
